@@ -20,6 +20,12 @@ class UserSeeder extends Seeder
                 'password' => bcrypt('12345678'),
                 'email_verified_at' => now(),
             ],
+            [
+                'name' => 'User',
+                'email' => 'user@user.com',
+                'password' => bcrypt('12345678'),
+                'email_verified_at' => now(),
+            ],
         ];
 
         User::insert($users);
